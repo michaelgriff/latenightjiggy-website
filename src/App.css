@@ -1,38 +1,578 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  margin: 0px;
+  color: white;
+  background-color: #161616;
+  font-family: Poppins;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin-left: 90px;
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.labs {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.powered {
+  display: flex;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.wonder {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  margin-left: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.right-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1335px) {
+  .header {
+    margin-left: 30px;
+    margin-top: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .labs {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right-top {
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .left-top {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+.flavors {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+  width: 426px;
+  height: 58.83px;
+  right: 12%;
+  top: 182px;
+
+  background: #232323;
+  border-radius: 14px;
+}
+
+.flavors-title {
+  font-size: 20px;
+  color: #BFBFBF;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-left: -40px;
+}
+
+.flavors-supply {
+  font-weight: 300;
+  font-size: 14px;
+  color: #BFBFBF;
+}
+
+.flavors-supply-total {
+  color: #47C992;
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 10px;
+
+  vertical-align: middle;
+}
+
+.eth {
+  padding-top: 12px;
+}
+
+.flavors-photo {
+  display: block;
+  margin: auto;
+  padding-top: 21px;
+  padding-left: 10px;
+  height: 400px;
+  width: 400px;
+}
+
+.flavors-photo-container {
+  width: 426.11px;
+  height: 453.63px;
+  top: 277px;
+  right: 12%;
+  margin: 10px 0px;
+
+  background: #000000;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 40px #163d2c;
+  border-radius: 36px;
+}
+
+.coming-soon-container {
+  width: 396px;
+  height: 58.83px;
+  right: 14%;
+  top: 772px;
+  margin-top: 20px;
+
+  background: #47C992;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 1px 1px 20px #47C992;
+}
+
+.coming-soon-text {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.music-logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 396px;
+  right: 14%;
+  top: 875px;
+}
+
+.apple-music {
+  padding-top: 5px;
+}
+
+.divider {
+  display: none;
+}
+
+@media screen and (max-width: 1355px) {
+  .divider {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .new {
+    background-color: #fff;
+    width: 20%;
+    height: 19px;
+    z-index: 2;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .new-text {
+    font-weight: 800;
+    font-size: 12px;
+    color: #161616;
+    padding-top: 1px;
+  }
+
+  .collectables {
+    width: 100%;
+    height: 66px;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .collectables-text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px 30px 0px;
+  }
+
+  .arrow-down {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .flavors {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px 20px;
+    width: 90%;
+    height: 58.83px;
+    right: 12%;
+    top: 182px;
+  
+    background: #232323;
+    border-radius: 14px;
+  }
+  
+  .flavors-title {
+    font-size: 20px;
+    color: #BFBFBF;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-left: -30px;
+  }
+  
+  .flavors-supply {
+    font-weight: 300;
+    font-size: 14px;
+    color: #BFBFBF;
+    margin-bottom: 100px;
+  }
+  
+  .flavors-supply-total {
+    color: #47C992;
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .eth {
+    padding-top: 12px;
+  }
+  
+  .flavors-photo {
+    width: 85%;
+    height: auto;
+    padding-top: 0px;
+  }
+  
+  .flavors-photo-container {
+    width: 90%;
+    height: auto;
+    margin: 10px 0px;
+  }
+  
+  .coming-soon-container {
+    width: 85%;
+    height: 58.83px;
+    margin-top: 20px;
+  }
+  
+  .coming-soon-text {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 15px;
+  }
+  
+  .music-logos {
+    width: 90%;
+  }
+  
+  .apple-music {
+    padding-top: 5px;
+  }
+}
+
+.title {
+  margin-top: -60px;
+  width: 408px;
+  height: 151px;
+  left: 215px;
+  top: 679px;
+  text-align: center;
+  background: #333333;
+  border-radius: 27px;
+  z-index: -1
+}
+
+.title-text {
+  font-size: 33px;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.title-contents {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.check {
+  height: 34px;
+  width: 34px;
+  padding: 7px 10px 0px;
+}
+
+.ig {
+  margin-top: 2px;
+  width: 31px;
+  height: 31px
+}
+
+.disc {
+  margin-top: 3px;
+  width: 38px;
+  height: 29px
+}
+
+.twitter {
+  width: 37px;
+  height: 37px
+}
+
+.social-icon {
+  padding: 10px;
+}
+
+.socials {
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 198.45px;
+  height: 56.7px;
+  left: 470px;
+  top: 155px;
+
+  background: #333333;
+  border-radius: 34px;
+  z-index: 2
+}
+
+.socials-content {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  margin-top: -30px;
+  margin-left: 27px;
+  left: 67px;
+  top: 183px;
+  border-radius: 40px;
+  box-shadow: 12px 12px 20px #000;
+}
+
+@media screen and (max-width: 1335px) {
+  .title {
+    width: 70%;
+    height: 125px;
+  }
+
+  .title-text {
+    font-size: 20px;
+  }
+
+  .profile {
+    width: 90%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -20px;
+  }
+  
+  .check {
+    height: 20px;
+    width: 20px;
+    padding: 5px 10px 0px;
+  }
+
+  .socials {
+    margin-left: 45%;
+    width: 140px;
+    height: 40px;
+  }
+
+  .ig {
+    margin-top: 1px;
+    width: 21px;
+    height: 21px
+  }
+  
+  .disc {
+    margin-top: 2px;
+    width: 26px;
+    height: 20px
+  }
+  
+  .twitter {
+    width: 25px;
+    height: 25px
+  }
+
+  .social-icon {
+    padding: 7px;
+  }
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0px;
+}
+
+.profile-two {
+  width: 566px;
+  height: 755px;
+  border-radius: 53px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.profile-three {
+  display: none;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -80px;
+}
+
+.about-title {
+  font-weight: 300;
+  font-size: 85px;
+  color: #BFBFBF;
+  margin: 0px;
+  padding-bottom: 20px;
+  margin-right: 60px;
+}
+
+.about-yellow {
+  font-weight: 800;
+  font-style: italic;
+  color: #F8DA5A;
+}
+
+.about-text-container {
+  z-index: -1;
+  margin-left: -400px;
+  width: 900px;
+  height: 572px;
+  border: 1.5px solid #BFBFBF;
+  border-radius: 53px;
+}
+
+.about-text {
+  width: 473px;
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 45px;
+  padding-left: 370px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding-top: 30px;
+  margin-left: -40px;
+  text-decoration: none;
+}
+
+.buy-buttons {
+  height: 55px;
+  width: 163px;
+  border: 2px solid #BFBFBF;
+  border-radius: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.buy-buttons:hover {
+  background-color: #fff;
+  transition: 0.2s ease-in-out;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.button-text {
+  margin-top: 14px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1335px) {
+  .profile-two {
+    display: none;
+    margin-top: 40px;
+  }
+
+  .profile-three {
+    display: block;
+    margin: auto;
+    border-radius: 53px;
+    width: 90%;
+  }
+
+  .about-div {
+    margin-left: 0px;
+  }
+
+  .about-title {
+    margin-right: 0px;
+  }
+
+  .about-text-container {
+    z-index: -1;
+    margin-left: 0px;
+    width: 80%;
+    height: 720px;
+    margin-top: -80px;
+  }
+
+  .about-text {
+    width: 70%;
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 30%;
+    padding-left: 0px;
+    margin: auto;
+  }
+
+  .about-title {
+    font-size: 50px;
+  }
+
+  .button-container {
+    width: 80%;
+    padding-top: 30px;
+    margin-left: 0px;
+  }
+
+  .buy-buttons {
+    height: 55px;
+    width: 123px;
+  }
+
+  .button-text {
+    font-size: 14px;
+    margin-top: 16px;
   }
 }
