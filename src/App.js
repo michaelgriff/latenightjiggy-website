@@ -110,21 +110,17 @@ function App() {
           <img class="profile-three" src={profile_three} alt={"three"} />
           <div class="about-text-container">
             <p class="about-text-top about-text">
-              Remezcla calls LATENIGHTJIGGY “a{" "}
-              <span class="yellow-text">musical force</span> to be reckoned
+              Remezcla calls LATENIGHTJIGGY “a musical force to be reckoned
               with.” Ones to Watch says “he can both steer and stir the pot.” By
               mixing reggaeton and R&B, hip-hop and afrobeats, Spanish and
               English, the Trinidadian-American artist born in Gaithersburg, MD
-              spans across cultures and{" "}
-              <span class="yellow-text">defies strict genre lines.</span>
+              spans across cultures and defies strict genre lines.
             </p>
             <br class="break"></br>
             <p class="about-text">
               As one of the faces of Spotify’s 2022 MIXTO campaign and a TikTok
-              Artist to Watch in June, Jiggy became an{" "}
-              <span class="yellow-text">
-                ambassador for music without borders.
-              </span>
+              Artist to Watch in June, Jiggy became an ambassador for music
+              without borders.
             </p>
             <br class="break"></br>
             <p class="about-text">
@@ -132,12 +128,9 @@ function App() {
               Eladio Carrión, and Sech – have recognized his talent; at his
               shows, both English- and Spanish-speaking fans sing his hit single
               “Mimosas” word-for-word. With the final installment of his EP
-              trilogy,{" "}
-              <span class="yellow-text">
-                “Flavors 3,” releasing September 9,
-              </span>{" "}
-              LATENIGHTJIGGY is sure to continue bending genres and capturing
-              listeners around the world.
+              trilogy, “Flavors 3,” releasing September 9, LATENIGHTJIGGY is
+              sure to continue bending genres and capturing listeners around the
+              world.
             </p>
           </div>
           <div class="button-container">
