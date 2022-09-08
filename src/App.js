@@ -71,7 +71,7 @@ function App() {
             </p>
           </div>
           <div class="flavors-photo-container">
-            <video class="flavors-photo" muted autoPlay loop>
+            <video class="flavors-photo" loop autoPlay muted playsInline>
               <source
                 class="flavors-photo"
                 src={flavors_vid}
