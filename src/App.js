@@ -70,7 +70,7 @@ function App() {
             </p>
           </div>
           <div class="flavors-photo-container">
-            <video class="flavors-photo" muted autoplay loop>
+            <video class="flavors-photo" muted autoPlay loop>
               <source
                 class="flavors-photo"
                 src={flavors_vid}
