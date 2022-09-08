@@ -12,6 +12,7 @@ import spotify from "./images/spotify.png";
 import profile_two from "./images/profile-2.png";
 import profile_three from "./images/profile-3.png";
 import arrow from "./images/down-arrow.png";
+import logo from "./images/ledge-logo.png";
 
 function App() {
   return (
@@ -79,9 +80,11 @@ function App() {
             </video>
             {/* <img class="flavors-photo" src={flavors} alt={"flavors"} /> */}
           </div>
-          <div class="coming-soon-container">
-            <p class="coming-soon-text">COMING SOON</p>
-          </div>
+          <a class="coming-soon-a" href="https://lnk.bio/latenightjiggy">
+            <div class="coming-soon-container">
+              <p class="coming-soon-text">COMING SOON</p>
+            </div>
+          </a>
           <div class="music-logos">
             <a href="https://open.spotify.com/artist/34OTRVwyaE8DkOrGMQa7Ah?si=f_dF6MmFSZu1fZ-5214LvA">
               <img src={spotify} alt={"spotify"} height={36} width={118} />

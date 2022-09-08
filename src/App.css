@@ -18,6 +18,7 @@ body {
   font-weight: 500;
   font-size: 25px;
   margin: 0px;
+  padding-top: 5px;
 }
 
 .powered {
@@ -47,6 +48,7 @@ body {
 .right-top {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 50%;
   margin-right: 20px;
@@ -144,12 +146,17 @@ body {
   border-radius: 36px;
 }
 
+.coming-soon-a {
+  width: 396px;
+}
+
 .coming-soon-container {
   width: 396px;
   height: 58.83px;
   right: 14%;
   top: 772px;
   margin-top: 20px;
+  color: white;
 
   background: #47C992;
   border-radius: 14px;
@@ -161,6 +168,7 @@ body {
   font-size: 22px;
   font-weight: 800;
   margin-top: 15px;
+  padding-top: 12px;
 }
 
 .music-logos {
@@ -275,17 +283,23 @@ body {
     height: auto;
     margin: 10px 0px;
   }
+
+  .coming-soon-a {
+    width: 100%;
+  }
   
   .coming-soon-container {
     width: 85%;
     height: 58.83px;
     margin-top: 20px;
+    margin-left: 30px;
   }
   
   .coming-soon-text {
     font-size: 22px;
     font-weight: 800;
     margin-top: 15px;
+    padding-top: 10px;
   }
   
   .music-logos {
@@ -518,6 +532,10 @@ a {
   text-decoration: none;
 }
 
+a.coming-soon-container {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1335px) {
   .profile-two {
     display: none;
@@ -548,7 +566,7 @@ a {
   }
 
   .about-text {
-    width: 80%;
+    width: 75%;
     font-weight: 300;
     font-size: 14px;
     padding-top: 30%;
