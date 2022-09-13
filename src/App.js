@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <div class="header">
         <p class="labs">Ledge Labs</p>
-        <div class="powered">
+        {/* <div class="powered">
           <p>Powered by</p>
           <img
             class="wonder"
@@ -28,7 +28,7 @@ function App() {
             width={54}
             height={11}
           />
-        </div>
+        </div> */}
       </div>
       <div class="top-container">
         <div class="left-top">
@@ -100,6 +100,20 @@ function App() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="video-responsive">
+        <div class="what-more-container">
+          <p class="what-more">"WHAT MORE"</p>
+          <p class="out-now">OUT NOW</p>
+        </div>
+        <iframe
+          src={`https://www.youtube.com/embed/4izTUPj7nro`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+        />
       </div>
       <div class="bottom-container">
         <img class="profile-two" src={profile_two} alt={"profile-2"} />

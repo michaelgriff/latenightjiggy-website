@@ -613,3 +613,65 @@ a.coming-soon-container {
 .yellow-text {
   color: #F8DA5A;
 }
+
+.video-responsive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.video-responsive iframe {
+  width: 711px;
+  height: 400px;
+}
+
+.what-more-container {
+  text-align: center;
+  padding-right: 100px;
+}
+
+.out-now {
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 0px;
+  color: #BFBFBF;
+  font-style: italic;
+}
+
+.what-more {
+  font-weight: 800;
+  font-size: 65px;
+  font-style: italic;
+  color: #F8DA5A;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1335px) {
+  .video-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .what-more-container {
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .video-responsive iframe {
+    width: 75%;
+    height: 200px;
+  }
+
+  .what-more {
+    font-size: 40px;
+    padding-bottom: 0px;
+  }
+
+  .out-now {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  
+}
