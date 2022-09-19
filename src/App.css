@@ -7,6 +7,13 @@ body {
   color: white;
   background-color: #161616;
   font-family: Poppins;
+
+}
+
+@media screen and (max-width: 1335px) {
+  body {
+    font-size: 9px;
+  }
 }
 
 .header {
@@ -444,7 +451,7 @@ body {
 .bottom-container {
   display: flex;
   justify-content: space-around;
-  margin: 80px 0px;
+  margin: 50px 0px;
 }
 
 .profile-two {
@@ -674,4 +681,14 @@ a.coming-soon-container {
     margin-top: 0px;
   }
   
+}
+
+.tour-dates {
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+h2 {
+  color: yellow;
 }

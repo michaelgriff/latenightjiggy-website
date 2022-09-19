@@ -13,6 +13,7 @@ import profile_two from "./images/profile-2.png";
 import profile_three from "./images/profile-3.png";
 import arrow from "./images/down-arrow.png";
 import logo from "./images/ledge-logo.png";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
@@ -101,7 +102,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="video-responsive">
         <div class="what-more-container">
           <p class="what-more">"WHAT MORE"</p>
@@ -114,6 +114,22 @@ function App() {
           allowFullScreen
           title="Embedded youtube"
         />
+      </div>
+      <div class="tour-dates">
+        <a
+          href="https://www.songkick.com/artists/10107098"
+          class="songkick-widget about-yellow"
+          data-theme="dark"
+          data-track-button="on"
+          data-detect-style="true"
+          data-background-color="transparent"
+          data-locale="en"
+        >
+          LATENIGHTJIGGY tour dates
+        </a>
+        <Helmet>
+          <script src="//widget.songkick.com/10107098/widget.js" />
+        </Helmet>
       </div>
       <div class="bottom-container">
         <img class="profile-two" src={profile_two} alt={"profile-2"} />
